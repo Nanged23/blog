@@ -11,7 +11,7 @@ export async function GET(req: Request) {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 
   if (!siteUrl) {
-    throw Error('出错了，Missing NEXT_PUBLIC_SITE_URL environment variable')
+    siteUrl='https://www.fuck.com'
   }
 
   let author = {
